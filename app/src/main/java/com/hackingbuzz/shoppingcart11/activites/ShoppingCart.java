@@ -95,7 +95,7 @@ public class ShoppingCart extends AppCompatActivity {
                 Bundle bundle = new Bundle();
                 List<CartItem> cartItems = getCartItems(cart);
                 Product product = cartItems.get(position - 1).getProduct();
-                Log.d(TAG, "Viewing product: " + product.getName());
+            //    Log.d(TAG, "Viewing product: " + product.getpName());
                 bundle.putSerializable("product", product);
                 Intent intent = new Intent(ShoppingCart.this, ProductActivity.class);
                 intent.putExtras(bundle);

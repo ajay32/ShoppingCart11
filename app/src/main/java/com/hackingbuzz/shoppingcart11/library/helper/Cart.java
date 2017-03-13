@@ -183,7 +183,7 @@ public class Cart implements Serializable {
     public String toString() {
         StringBuilder strBuilder = new StringBuilder();
         for (Entry<Saleable, Integer> entry : cartItemMap.entrySet()) {
-            strBuilder.append(String.format("Product: %s, Unit Price: %f, Quantity: %d%n", entry.getKey().getName(), entry.getKey().getPrice(), entry.getValue()));
+            strBuilder.append(String.format("Product: %s, Unit Price: %f, Quantity: %d%n", entry.getKey().getpName(), entry.getKey().getPrice(), entry.getValue()));
         }
         strBuilder.append(String.format("Total Quantity: %d, Total Price: %f", totalQuantity, totalPrice));
 

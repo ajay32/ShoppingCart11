@@ -41,6 +41,7 @@ public class Product implements Serializable , Saleable{    // serializable is a
         this.pId = pId;
     }
 
+    // Saleable method implemented as the same name as getter...u think of em as same..
     public String getpName() {
         return pName;
     }
@@ -82,8 +83,5 @@ public class Product implements Serializable , Saleable{    // serializable is a
         return pPrice;
     }
 
-    @Override
-    public String getName() {
-        return null;
-    }
+
 }
